@@ -249,6 +249,11 @@ a:visited{
     margin-left: 10px;
     padding: 20px;
 }
+.cvideo{
+    width: 300px;
+    height: 400px;
+    margin-left: 35px;
+}
 tbody tr td.nombre{
     background-color: #282f40;
     color: #d7dbe6;
