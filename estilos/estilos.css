@@ -1,0 +1,427 @@
+/*
+COLORES
+Color verde: #50ac5ab
+Color oscuro: #282f40
+Color texto: #7e89a3
+Color claro: #d7dbe6
+Color gris: #f6f6f8
+Color añil:  #264796
+Color morado: ##8E44AD;
+Color azul: #5DADE2;
+*/
+/*TIPO DE LETRA*/
+@font-face {
+    font-family: Comic Neue Sans;
+    src: url(../ComicNeueSansID.ttf);
+}
+*{
+    font-family: "Comic Neue Sans";
+}
+/*HEADER*/
+/*https://blog.duda.co/es/encabezado-fijo*/
+header{
+    text-align: center;
+    background: #282f40;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.nombre{
+    color: #7e89a3;
+}
+.fotoheader{
+    width: 180px;
+    margin-top: -15px;
+}
+.fotoheaderf{
+    width: 180px;
+    margin-top: -52px;
+}
+/*IZQ*/ 
+.primero{
+    margin-top: 80px;
+}
+h1{
+    background-color: #282f40;
+    text-align: center;
+    color: #d7dbe6;
+    font-size: 32px;
+}
+.foto{
+    position: static;
+    margin-left: 1880px;
+    margin-top: -180px;
+    margin-right: 1%;
+    float: right;
+    width: 100px; 
+    height: 100px;
+}
+#indice2{
+    text-align: left;
+    font-size: 26px;
+    color: #7e89a3;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 100%;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 20px;
+}
+a{
+    color: #7e89a3;
+}
+a:visited{
+    color: #8E44AD;
+}
+/*FONDO DE LA PÁGINA*/
+/*Para que la imagen de fondo se ajuste automaticamente*/
+.izq{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*IZQUIERDA*/
+.aside{
+    float: left;
+    width: 260px;
+    height: 100%;
+    background-color: #282f40;
+    margin-top: 60px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: solid 3px #343e57;
+    box-shadow: 2px 5px 5px;
+    position: fixed;
+}
+.widget ul{
+    text-align: left;
+    padding-left: 10px;
+    list-style-type: none;
+}
+.widget ul li a{
+    font-size: 26px;
+    color: #7e89a3;
+    border: rgba(119, 136, 153, 0.800) solid 3px;
+    border-radius: 10px;
+    background-color: #3b476274;
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+}
+/*SECTION*/
+#content{
+    float: right;
+    width: calc(100% - 300px);
+    margin-right: 20px;
+}
+/*CABEZERA*/
+/*Para que sirve overflow: hidden= hacemos que todo el contenido que sobresale de su contenedor se oculte.*/
+.Cabezera{
+    background-color: #282f40;
+    color: #d7dbe6;
+    overflow: hidden;
+}
+.Cabezera2{
+    text-align: center;
+    margin-top: -2px;
+    font-size: 32px;
+    overflow: hidden;
+}
+/*INTRODUCCIÓN*/
+.titulo{
+    margin-top: 56px;
+    background-color: #282f40;
+    text-align: center;
+    color: #d7dbe6
+}
+.introduccion{
+    text-align: left;
+    font-size: 26px;
+    color: #7e89a3;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 100%;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 20px;
+}
+/*PRESENTACIÓN*/
+.presentacion{
+    text-align: left;
+    font-size: 26px;
+    color: #7e89a3;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 100%;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 20px;
+}
+.columnas{
+    column-count: 3;
+    column-rule: #d7dbe6 solid 2px;
+    text-align: justify;
+    float: left;
+    border: 1px solid silver;
+    background-color: #343e57;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.columnas p{
+    break-after: column;
+}
+.dormir{
+    width: 150px;
+    height: 100px;
+    position: static;
+}
+.comer{
+    width: 150px;
+    height: 100px;
+    position: static;
+}
+.columnas-2{
+    column-count: 2;
+    column-rule: #d7dbe6 solid 2px;
+    text-align: justify;
+    float: left;
+    border: 1px solid silver;
+    background-color: #343e57;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+.columnas-2 p{
+    break-after: column;
+}
+/*BIBLIOGRAFIA*/
+.bibliografia{
+    text-align: left;
+    font-size: 26px;
+    color: #7e89a3;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 100%;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 20px;
+}
+/*OTRA PÁGINA*/
+/*CURRICULUM*/
+.Curriculum{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.headCV{
+    background-color: #282f40;
+    color: #d7dbe6;
+    width: 100%;
+    margin-top: 80px;
+}
+#divCV{
+    font-size: 26px;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 100%;
+    width: auto;
+    margin-left: 10px;
+    padding: 20px;
+}
+tbody tr td.nombre{
+    background-color: #282f40;
+    color: #d7dbe6;
+    padding: 20px;
+    text-align: left;
+    width: 360px;
+    vertical-align: top;
+    /*Para alterar la ubicación vertical de un elemento en línea, en relación a su elemento padre o a la línea del elemento.*/
+}
+tbody tr td.informacion{
+    background-color: #7e89a3;
+    color: #d7dbe6;
+    padding: 10px;
+    text-align: left;
+}
+tbody tr td.informacion li{
+    list-style-type: square;
+}
+.fotoCV{
+    width: 200px;
+    height: 200px;
+}
+.enlacesCV{
+    color: #d7dbe6;
+}
+/*FORMULARIO.*/
+.Formularioh1{
+    background-color: #282f40;
+    color: #d7dbe6;
+    width: 100%;
+    margin-top: 80px;
+}
+.Formulariobody{
+    color: #7e89a3;
+    font-size: 26px;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 100%;
+    width: auto;
+    margin-left: 10px;
+    padding: 20px;
+}
+legend{
+    background-color: lightgray;
+    border: gray solid 2px;
+    border-radius: 10px;
+}
+input{
+    background-color: lightblue;
+    border: lightseagreen solid 2px;
+}
+/*SOBRE MI PROYECTO*/
+.sobremiwebhead{
+    background-color: #282f40;
+    color: #d7dbe6;
+    width: 100%;
+    margin-top: 80px;
+}
+.sobremiweb{
+    color: #7e89a3;
+    font-size: 26px;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 100%;
+    width: auto;
+    margin-left: 10px;
+    padding: 20px;
+}
+.layout{
+    border: #282f40 solid 2px;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.layoutheader{
+    border: #282f40 solid 2px;
+    text-align: center;
+    margin: 20px;
+    background-color: #282f40;
+}
+.layoutaside{
+    border: #282f40 solid 2px;
+    text-align: center;
+    margin: 20px;
+    margin-right: 82%;
+    height: 400px;
+    background-color: #282f40;
+}
+.layoutbody{
+    border: #282f40 solid 2px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 20%;
+    height: 400px;
+    margin-top: -424px;
+    background-color: snow;
+}
+.layoutfooter{
+    border: #282f40 solid 2px;
+    text-align: center;
+    margin: 20px;
+    background-color: #282f40;
+}
+.videoweb{
+    color: #7e89a3;
+    font-size: 26px;
+    border: gray solid 1px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px;
+    background-color: snow;
+    height: 400px;
+    width: auto;
+    margin-left: 10px;
+    padding: 20px;
+}
+iframe{
+    width: 600px;
+    height: 300px;
+    margin-left: 20%;
+    margin-top: 50px;
+    position: static;
+    z-index: 2;
+}
+/*PIE DE PÁGINA*/
+/*Position: fiexed =hace que un elemento se coloque respecto al viewport, le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll.*/
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    padding-bottom: 18px;
+    background: #282f40;
+
+}
+#footer-bottom{
+    display: table;
+}
+#footer-bottom .copyright{
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}
+#footer-bottom #footer-menu,
+#footer-bottom .copyright{
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    color: #7e89a3;
+}
+#footer-bottom #footer-menu ul{
+    margin: 1.0125em 0;
+    padding: 0;
+    list-style: none;
+    text-align:right;
+}
+#footer-bottom #footer-menu ul li{
+    display: inline-block;
+}
+#footer-bottom #footer-menu ul li::after{
+    content: "/";
+}
+#footer-bottom #footer-menu ul li a{
+    display: inline-block;
+    padding: 0 1em;
+    text-align: right;
+    color: #7e89a3;
+}
+#footer-bottom #footer-menu ul li a:hover{
+    color:#8E44AD;
+    background-color: #343e57;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario.</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+  </head>
+  <!DOCTYPE html>
+  <body class="izq">
+    <header id="header">
+        <div class="nombre"> 
+            <p>IES Villablanca</p>
+            <img src="../img/logoweb.png" alt="foto" class="fotoheaderf" align="left">
+        </div>
+    </header>
+    <aside class="aside">
+      <div class="widget">
+        <ul>
+          <br>
+          <li><a href="index.html" target="_self">Indice</a></li>
+          <br>
+          <li><a href="Curriculum.html" target="_self">Currículum</a></li>
+          <br>
+          <li><a href="Formulario.html">Formulario</a></li>
+          <br>
+          <li><a href="proyecto.html">Sobre mí proyecto</a></li>
+        </ul>
+      </div>
+    </aside>
+    <section id="content">
+        <article>
+            <h1 class="Formularioh1">Formulario.</h1>
+            <div class="Formulariobody">
+        <form action="formularios-range-1.php" method="get">
+          <fieldset>
+            <legend id="Nombre">Datos personales</legend>
+              <p>Nombre: <input type="text" name="nombre" size="42" placeholder="Pon tu nombre aquí." required></p>
+              <p>Apellidos: <input type="text" name="apellidos" size="40" placeholder="Pon tus apellidos aquí." required></p>
+              <p>Edad: <input type="number" name="fecha" min="0" max="99" required></p>
+              <p>Fecha de nacimiento: <input type="date" name="fecha" required></p>
+              <p>Sexo: 
+                <label><input type="radio" name="genero" required> Hombre.</label> 
+                <label><input type="radio" name="genero" required>Mujer. </label>
+                <label><input type="radio" name="genero" readonly>Prefiero no decirlo.</label>
+              </p>
+              <p>Edad: 
+                <label><input type="radio" name="edad" required> Adulto.</label>
+                <label><input type="radio" name="edad" required>Menor.</label>
+              </p>
+              <p>Color favorito: <input type="color" name="colorElegido"></p>
+          </fieldset>
+          <fieldset>
+            <legend id="Resgistrate">Datos de registro</legend>
+              <p>Usuario: <input type="text" name="user" size="42" placeholder="Introduce tú usuario." required></p>
+              <p>Contraseña: <input type="password" name="contraseña" size="35" placeholder="Introduce tú contraseña." required></p>
+          </fieldset>
+          <fieldset>
+            <legend id="Opinión">Opinión sobre nuestra web</legend>          
+              <p>Que le han parecido nuestros servicios:
+                <select name="menu">
+                  <option></option>
+                  <option>Malos.</option>
+                  <option>Buenos.</option>
+                  <option>Excelentes.</option>
+                </select>
+              </p>
+                <p>
+                  Indique su nivel de satisfacción:
+                  <input type="range" name="rango">
+                </p>
+          </fieldset>
+          <fieldset>
+            <legend id="Cookies">Políticas de privacidad</legend>
+              <p><label><input type="checkbox" name="casilla">Acepto las políticas de privacidad.</label></p>
+            </fieldset>
+              <p>
+                <input type="submit" value="Enviar" onclick="myFunction()">
+                <!--Mensaje emergente-->
+                <script>
+                  function myFunction() {
+                    alert("¡Gracias tu formulario ha sido recibido con exito!");
+                  }
+                </script>
+                <input type="reset" value="Borrar">
+              </p>
+        </form>
+            </div>
+            <br><br><br><br>
+        </article>
+    </section>
+    </body>
+    <footer id="footer">
+        <div id="footer-bottom" class="container">
+          <div class="copyright">
+             <p>&copy; 2023 Alejandro Peláez / Proyecto Aplicaciones Web</p>
+          </div>
+          <!--proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos-->
+          <nav id="footer-menu">
+              <ul>
+                  <li><a class="pie" href="#Nombre">Datos personales.</a></li>
+                  <li><a class="pie" href="#Resgistrate">Resgistrate</a></li>
+                  <li><a class="pie" href="#Opinión">Opinión</a></li>
+                  <li><a class="pie" href="#Cookies">Políticas de privacidad</a></li>
+              </ul>
+          </nav>
+        </div>
+      </footer>
