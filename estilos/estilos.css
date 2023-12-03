@@ -34,10 +34,12 @@ header{
 .fotoheader{
     width: 180px;
     margin-top: -15px;
+    float: left;
 }
 .fotoheaderf{
     width: 180px;
     margin-top: -52px;
+    float: left;
 }
 /*IZQ*/ 
 .primero{
@@ -369,7 +371,7 @@ input{
     border-radius: 10px;
     box-shadow: 2px 5px 5px;
     background-color: snow;
-    height: 400px;
+    height: 100%;
     width: auto;
     margin-left: 10px;
     padding: 20px;
@@ -379,6 +381,13 @@ iframe{
     height: 300px;
     margin-left: 20%;
     margin-top: 50px;
+    position: static;
+    z-index: 2;
+}
+.pvideo{
+    width: 600px;
+    height: 300px;
+    margin-left: 20%;
     position: static;
     z-index: 2;
 }
